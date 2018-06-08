@@ -1,0 +1,18 @@
+package com.javaex.oop.goods.v1;
+
+public class GoodsApp {
+
+	public static void main(String[] args) {
+		Goods notebook = new Goods();
+		notebook.name = "Dell XPS";
+		notebook.price = 2000000;
+		
+		Goods camera = new Goods();	//만들어 놓은 필드
+		camera.name = "Nikon";	//멤버 필드
+		camera.price = 700000;
+		
+		System.out.printf("%s, %d원", notebook.name, notebook.price);
+		System.out.printf("%s, %d원", camera.name, camera.price);
+	}
+
+}
